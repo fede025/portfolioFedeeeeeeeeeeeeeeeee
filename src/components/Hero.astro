@@ -7,10 +7,10 @@ import GitHubIcon from "@/components/icons/GitHub.astro"
 import SocialPill from "@/components/SocialPill.astro"
 ---
 
-<div class="max-w-xl">
+<div class="w-full lg:max-w-xl">
   <div class="flex gap-4 mb-4">
     <img
-      class="object-cover  lg:p-2 lg:w-20  h-full aspect-square rounded-2xl  " 
+      class="w-16 h-16 object-cover aspect-square rounded-2xl sm:w-20 sm:h-20 lg:w-20 lg:h-20"
       src="/working.jpg"
       alt={personalImageAlt}
     />
@@ -31,15 +31,13 @@ import SocialPill from "@/components/SocialPill.astro"
   <p
     class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
   >
-    1 year of experience. <strong
-      >Software Engineer </strong
-    > and <strong>Web Developer.</strong>
-      Buenos Aires, Argentina. 
+    1 year of experience. <strong>Software Engineer</strong> and <strong>Web Developer.</strong>
+    Buenos Aires, Argentina. 
   </p>
   
   <br>
   
-  <nav class="flex flex-wrap gap-4 ">
+  <nav class="flex flex-wrap gap-4">
     <SocialPill href="mailto:fedefabregues@gmail.com">
       <MailIcon class="size-4" />
       Contact Me
@@ -52,6 +50,5 @@ import SocialPill from "@/components/SocialPill.astro"
       <GitHubIcon class="size-4" />
       GitHub
     </SocialPill>
-    
   </nav>
 </div>

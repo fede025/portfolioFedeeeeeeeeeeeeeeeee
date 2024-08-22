@@ -6,6 +6,7 @@ import React from "./icons/react.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
 import Html from "./icons/Html.astro"
+import Javascript from "./icons/Javascript.astro"
 
 const TAGS = {
   NEXT: {
@@ -28,42 +29,41 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: Html,
   },
+  JAVASCRIPT: {
+    name: "Javascript",
+    class: "bg-[#003159] text-white",
+    icon: Javascript,
+  },
+
 }
 const PROJECTS = [
 
-  // {
-  //   title: "Tetris App",
-  //   description: " a beatufiul tetris game",
-  //   link: "https://tetris-cj01qna34-federicofabregues-projects.vercel.app/",
-  //   github: "https://github.com/fede025/tetris",
-  //   image: "/projects/tetris.webp",
-  //   tags: [ TAGS.TAILWIND],
-  // }, 
   {
     title: "Snake App",
     description: 
-    "a beautiful snake game. Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes.",
+      "A beautiful snake game. Free platform with programming challenges. Over 1 million visits in a month.",
     link: "https://vercel.com/federicofabregues-projects/snake-js",
     github: "https://github.com/fede025/Snake.js",
     image: "/projects/Snake_OG-logo.jpg",
-    tags: [ TAGS.TAILWIND, TAGS.REACT, TAGS.NEXT, TAGS.HTML],
+    tags: [ TAGS.TAILWIND, TAGS.JAVASCRIPT, TAGS.REACT],
   },
   {
     title: "Movie Finder",
     description: 
-    "a beautiful movie finderPlataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes.",
+      "A beautiful movie finder. Free platform with programming challenges. Over 1 million visits in a month.",
     link: "https://movie-searcher-murex.vercel.app/",
     github: "https://github.com/fede025/Movie-finder",
     image: "/projects/Captura.PNG",
-    tags: [ TAGS.TAILWIND, TAGS.REACT, TAGS.NEXT],
+    tags: [ TAGS.TAILWIND, TAGS.JAVASCRIPT, TAGS.REACT ],
   },
   {
     title: "React-Cart",
     description:
-      "Eccomerce website.",
+      "An e-commerce website built with React, showcasing a responsive and interactive shopping cart experience.",
     link: "https://react-cart-v8tx.vercel.app/",
+    github: "https://github.com/fede025/react-cart",
     image: "/projects/reactCart.jpg",
-    tags: [TAGS.TAILWIND, TAGS.REACT],
+    tags: [TAGS.TAILWIND, TAGS.JAVASCRIPT, TAGS.REACT ],
   },
 ]
 ---
@@ -112,11 +112,6 @@ const PROJECTS = [
             </LinkButton>
 
 
-
-            
-
-
-
           )}
         </footer>
     </div>
@@ -125,23 +120,3 @@ const PROJECTS = [
     ))
   }
 </div>
-
-
-
-
-<!--
-
-
-  PROJECTS: 
-
-  react shoping cart
-
-  movie finder
-
-
-
-
-
-
-
-  -->

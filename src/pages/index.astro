@@ -12,17 +12,12 @@ import Hero from "@/components/Hero.astro"
 import Skills from "@/components/Skills.astro"
 import Skills2 from "@/components/Skills2.astro"
 
-import React from "@/components/icons/react.astro"
-import NodeJs from "@/components/icons/NodeJs.astro"
-import Tailwind from "@/components/icons/Tailwind.astro"
-
-import Experience from "@/components/Experience.astro"
 
 ---
 
 <Layout
   title="Porftolio of Federico Fabregues - Web Developer"
-  description="Contrata a  Federico Fabregues para crear tu aplicación web o móvil. Desarrollador Web."
+  description="Contrata a  Federico Fabregues para crear tu aplicación web."
 >
   <main class="px-4">
     <SectionContainer class="py-16 md:py-36">
@@ -31,16 +26,6 @@ import Experience from "@/components/Experience.astro"
     </Hero>
     </SectionContainer>
     <div class="space-y-24">
-
-    <!-- <SectionContainer id="experiencia">
-      <h2
-        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
-      >
-        <Briefcase class="size-8" />
-        Experiencia laboral
-      </h2>
-      <Experience />
-    </SectionContainer> -->
 
 
     <SectionContainer id="skills">
@@ -94,3 +79,15 @@ import Experience from "@/components/Experience.astro"
   </div>
   </main>
 </Layout>
+
+
+<!-- ---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Test" description="Test description">
+  <div class="bg-red-200 min-h-screen w-full p-4">
+    <p class="text-black">This is a test paragraph to check layout issues.</p>
+    <div class="w-full h-20 bg-blue-300 mt-4"></div>
+  </div>
+</Layout> -->
