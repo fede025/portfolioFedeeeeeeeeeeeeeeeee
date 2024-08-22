@@ -71,7 +71,7 @@ const NEWSKILLS = [
 <div class="flex flex-col gap-y-16">
   {
     NEWSKILLS.map(({  tags  }) => (
-    <article class="flex flex-col space-x-0 space-y-8  md:space-x-8 md:space-y-0">
+    <article class="flex flex-col space-x-0 space-y-8 md:space-x-8 md:space-y-0">
   <div class="w-full gap-4 md:w-1/2">
     
   </div>
@@ -81,10 +81,10 @@ const NEWSKILLS = [
     <div class="flex flex-wrap gap-x-2 mt-2">
       <ul class="flex flex-row mb-2 gap-x-8">
           {tags.map((tag) => (
-            <li>
+            <li class="flex flex-col items-center text-center">
               
-                <tag.icon class="mb-2 h-12 w-auto gap-10 md:h-20 " /> 
-                {tag.name}
+                <tag.icon class="mb-2 h-12 w-auto md:h-20 " /> 
+                <span class="text-sm mt-1">{tag.name}</span>
               
             </li>
           ))}
@@ -96,7 +96,6 @@ const NEWSKILLS = [
     ))
   }
 </div>
-
 
 
 
